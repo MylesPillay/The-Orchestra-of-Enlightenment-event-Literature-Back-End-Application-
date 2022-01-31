@@ -1,0 +1,71 @@
+@use "../../assets/styles/_variables" as *;
+
+.themepicker {
+  display: flex;
+  height: 28rem;
+  width: 29rem;
+
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+  }
+
+  &__input {
+    height: 2rem;
+    width: 2rem;
+    background-color: $form-input-color;
+
+    &-color {
+      border: none;
+      width: 2rem;
+    }
+  }
+
+  &__label {
+    margin-bottom: 0.5rem;
+  }
+
+  &__buttons {
+    margin-left: 8rem;
+    padding-top: 3rem;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    align-items: baseline;
+    &-back {
+      margin-right: -1rem;
+
+    }
+  }
+
+  &__section:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
+  &__section {
+    &-color {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      border: 1px solid $form-label-color;
+      width: 2rem;
+      border-radius: 8px;
+      padding: 0.2rem;
+    }
+    &-img {
+      width: 0.6rem;
+      padding-right: 0.5rem;
+    }
+  }
+
+  &__selectBox {
+    height: 3rem;
+    padding: 0 1rem;
+    border: 1px solid $form-label-color;
+    border-radius: 8px;
+  }
+}
+
+

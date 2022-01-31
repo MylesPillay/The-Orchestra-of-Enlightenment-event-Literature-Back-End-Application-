@@ -1,0 +1,46 @@
+@use "../../assets/styles/variables"as *;
+
+.eventCard {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   color: $event-list-info-color;
+   padding: 1rem;
+   background-color: $form-input-color;
+   border-bottom: 2px solid $back-color;
+   align-items: center;
+
+   >h5,p{
+      font-weight: 400;
+      margin: 0;
+   }
+
+   &-series {
+      width: 16vw;
+   }
+   &-location{
+      width: 12vw;
+   }
+   &-title {
+      width: 12vw;
+      color: $text-color;
+   }
+
+   &-time {
+      width: 6vw;
+   }
+
+   &-URL {
+      width: 26vw;
+      overflow-wrap: break-word;
+   }
+
+   
+   &-icon {
+      width: 1.5rem;
+      height: fit-content;
+      &:hover {
+         filter: opacity(50%);
+      }
+   }
+}

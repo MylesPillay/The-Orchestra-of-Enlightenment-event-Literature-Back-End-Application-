@@ -1,0 +1,19 @@
+@use "../../assets/styles/variables" as *;
+
+.header {
+  display: flex;
+  align-items: center;
+  font-style: normal;
+  font-size: 0.78rem;
+  gap: 5rem;
+  color: $title-color;
+  padding: 0.3rem 1.5rem;
+  font-weight: 700;
+  background-color: $form-background-color;
+  width: 100vw;
+  
+  &__logo {
+    width: 3rem;
+  }
+}
+
